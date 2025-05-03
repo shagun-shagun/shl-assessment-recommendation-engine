@@ -17,6 +17,12 @@ This is a FastAPI-based backend application that recommends SHL assessments base
 - Uvicorn
 - Pyngrok
 
+## Evaluation & Optimization
+- Used fuzzywuzzy's token_sort_ratio to allow approximate string matching
+- Set match threshold to 62 based on multiple test iterations
+- Cleaned and normalized input strings to improve accuracy
+- Handled multiple comma-separated values (e.g. "developer, backend dev") in catalogue
+
 ## How to Use
 1. Open the live app URL (shared via ngrok)
 2. Navigate to /docs to access Swagger UI
